@@ -43,7 +43,9 @@ public class RedisConfig {
         redisTemplate.setHashValueSerializer (new JdkSerializationRedisSerializer ());
         redisTemplate.setValueSerializer (new JdkSerializationRedisSerializer ());
         redisTemplate.setConnectionFactory (factory);
+        System.out.println ("111111");
     }
+
 
     /**
      * 实例化 HashOperations 对象,可以使用 Hash 类型操作
