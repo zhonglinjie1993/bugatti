@@ -7,6 +7,7 @@ import com.bugatti.service.ProductInfoService;
 import com.bugatti.vo.ProductInfoVO;
 import com.bugatti.vo.ProductVO;
 import com.bugatti.vo.ResultVO;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,7 +29,7 @@ public class BuyerProductController {
 
     @GetMapping("/list")
     public ResultVO list() {
-        // 1.查询所有上架的商品
+      /*  // 1.查询所有上架的商品
 
         List<ProductInfo> upAll = productInfoService.findUpAll (0);
 
@@ -47,8 +48,8 @@ public class BuyerProductController {
         productVO.setFoods (Arrays.asList (productInfoVO));
         resultVO.setData (Arrays.asList (productVO));
 
-        return resultVO;
-
+        return resultVO;*/
+        return null;
     }
 
 

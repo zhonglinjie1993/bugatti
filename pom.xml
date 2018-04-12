@@ -7,7 +7,7 @@
     <groupId>com.bugatti</groupId>
     <artifactId>bugatti</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>bugatti</name>
     <description>微信点餐系统</description>
@@ -56,9 +56,29 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+        <!--tomcat支持-->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+                        <scope>provided</scope>
+        </dependency>
+        <!--jsp支持-->
+        <!-- servlet 依赖. -->
+        <!-- servlet 依赖包 -->
+        <!--<dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
 
-
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -69,14 +89,18 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-
+        <!-- Tomcat的支持 -->
+       <!-- <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            &lt;!&ndash;  <scope>provided</scope>&ndash;&gt;
+        </dependency>-->
         <!-- 定时器任务 quartz需要导入的坐标 -->
         <dependency>
             <groupId>org.quartz-scheduler</groupId>
             <artifactId>quartz</artifactId>
             <version>1.8.5</version>
         </dependency>
-
 
 
     </dependencies>

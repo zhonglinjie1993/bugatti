@@ -5,10 +5,13 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
+/**
+ * 定时任务
+ */
 @Component
 public class QuartzDemo {
 
-    @Scheduled(cron = "0 0/1 * * * ?") // 每分钟执行一次
+   /* @Scheduled(cron = "0 0/1 * * * ?") // 每分钟执行一次
     public void work() throws Exception {
         System.out.println ("执行调度任务：" + new Date ());
     }
@@ -29,7 +32,7 @@ public class QuartzDemo {
     @Scheduled(cron = "0 0 0/1 * * ? ") // 每一小时执行一次
     public void goWork() throws Exception {
         System.out.println ("每一小时执行一次的定时任务：" + new Date ());
-    }
+    }*/
 
 
 }
