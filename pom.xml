@@ -41,13 +41,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
-
+        <!--集合操作类-->
         <dependency>
             <groupId>commons-collections</groupId>
             <artifactId>commons-collections</artifactId>
         </dependency>
-
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -60,16 +58,9 @@
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
-                        <scope>provided</scope>
-        </dependency>
-        <!--jsp支持-->
-        <!-- servlet 依赖. -->
-        <!-- servlet 依赖包 -->
-        <!--<dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
             <scope>provided</scope>
-        </dependency>-->
+        </dependency>
+        <!--jstl支持-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
@@ -89,12 +80,6 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-        <!-- Tomcat的支持 -->
-       <!-- <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            &lt;!&ndash;  <scope>provided</scope>&ndash;&gt;
-        </dependency>-->
         <!-- 定时器任务 quartz需要导入的坐标 -->
         <dependency>
             <groupId>org.quartz-scheduler</groupId>
