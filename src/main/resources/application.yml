@@ -17,23 +17,11 @@ spring:
       min-idle: 8
       max-idle: 0
     timeout: 0
-# jsp 配置
- #http:
- #  encoding:
- #    force: true
- #    charset: utf-8
- #    enabled: true
-  mvc:
-    view:
-      prefix: /WEB-INF/jsp/
-      suffix: .jsp
   thymeleaf:
     cache: false
-    enabled: false
-#顶级目录
-#server:
-#  context-path: /
-  #tomcat:
-  #  uri-encoding: UTF-8
-  #port: 8080
+    mode: HTML5
+    encoding: UTF-8
+    content-type: text/html
+
+
 
