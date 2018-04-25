@@ -7,7 +7,7 @@ public class ResultVo {
     /**
      *  返回的结果码【0：成功；1：失败】
      */
-    private Integer code=0;
+    private Integer code=1;
     /**
      * 信息
      */

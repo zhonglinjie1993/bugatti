@@ -10,15 +10,13 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
-import static org.junit.Assert.*;
-
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class editorServiceImplTest {
 
 
     @Autowired
-    private editorServiceImpl editorService;
+    private EditorServiceImpl editorService;
 
     @Test
     public void deleteByPrimaryKey() {

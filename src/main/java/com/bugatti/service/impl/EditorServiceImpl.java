@@ -2,7 +2,7 @@ package com.bugatti.service.impl;
 
 import com.bugatti.dataObject.EditorDto;
 import com.bugatti.repository.EditorMapper;
-import com.bugatti.service.editorService;
+import com.bugatti.service.EditorService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class editorServiceImpl implements editorService {
+public class EditorServiceImpl implements EditorService {
     @Autowired
     private EditorMapper editorMapper;
 

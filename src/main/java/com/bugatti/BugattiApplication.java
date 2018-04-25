@@ -24,4 +24,18 @@ public class BugattiApplication extends SpringBootServletInitializer {
         SpringApplication.run(BugattiApplication.class, args);
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 
-public interface editorService {
+public interface EditorService {
 
     int deleteByPrimaryKey(Integer id);
 
